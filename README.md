@@ -1,7 +1,3 @@
-# QUANTAM CODERS
-PS0204
-group members
-mayur patil
-shahid syed
-jay wadhekar
-om bhujbal
+# Welcome to your Lovable project
+
+TODO: Document your project here

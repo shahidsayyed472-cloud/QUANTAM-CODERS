@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 96%;
+    --foreground: 207 80% 21%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 207 80% 21%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 207 80% 21%;
+
+    --primary: 207 80% 21%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 30 100% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 15% 94%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 145 82% 28%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 87%;
+    --input: 220 13% 87%;
+    --ring: 207 80% 21%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 207 80% 21%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 30 100% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 207 80% 28%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 207 60% 30%;
+    --sidebar-ring: 30 100% 60%;
+    --sidebar-muted: 207 60% 35%;
+
+    --saffron: 30 100% 60%;
+    --gov-green: 145 82% 28%;
+    --gov-blue: 207 80% 21%;
+    --priority-high: 0 84% 60%;
+    --priority-medium: 30 100% 60%;
+    --priority-low: 48 100% 50%;
+    --priority-verylow: 145 82% 28%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .stat-card {
+    @apply bg-card rounded-lg border p-5 shadow-sm hover:shadow-md transition-shadow;
+  }
+  .priority-high {
+    @apply bg-red-100 text-red-700 border-red-200;
+  }
+  .priority-medium {
+    @apply bg-orange-100 text-orange-700 border-orange-200;
+  }
+  .priority-low {
+    @apply bg-yellow-100 text-yellow-700 border-yellow-200;
+  }
+  .priority-verylow {
+    @apply bg-green-100 text-green-700 border-green-200;
+  }
+  .status-badge {
+    @apply px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  .gov-gradient {
+    @apply bg-gradient-to-r from-primary via-primary to-primary;
+  }
+  .saffron-accent {
+    @apply border-l-4;
+    border-left-color: hsl(var(--saffron));
+  }
+}
