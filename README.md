@@ -1,3 +1,8 @@
-# Welcome to your Lovable project
+QUANTAM CODER 
+NAME MAYUR PATIL
+SHAHID SYED
+JAY WADHEKAR
+OM BHUJBAL
 
-TODO: Document your project here
+
+
